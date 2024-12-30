@@ -1,0 +1,111 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-image: url("download%20(15).jpeg"); /* Path to your background image */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+}
+
+main h1,
+main h2,
+#chem {
+    color: white;
+    text-shadow: 1px 2px rgb(207, 207, 207);
+    margin: 10px 0;
+}
+
+/* Font sizes that scale with the screen width */
+main h1,
+#chem {
+    font-size: 8vw; /* Responsive font size */
+}
+
+main h2 {
+    font-size: 5vw;
+}
+
+/* Button Styling */
+a {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: 2px solid rgb(116, 182, 41);
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    font-size: 4vw; /* Responsive font size */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the button */
+a:hover {
+    background-color: rgb(116, 182, 41);
+}
+
+/* Responsive Design */
+
+/* For small screens (phones) */
+@media (max-width: 600px) {
+    main h1,
+    #chem {
+        font-size: 10vw; /* Larger font size for mobile */
+    }
+
+    main h2 {
+        font-size: 6vw;
+    }
+
+    a {
+        font-size: 5vw;
+        padding: 10px 20px;
+    }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    main h1,
+    #chem {
+        font-size: 7vw;
+    }
+
+    main h2 {
+        font-size: 5vw;
+    }
+
+    a {
+        font-size: 3.5vw;
+        padding: 12px 24px;
+    }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 1025px) {
+    main h1,
+    #chem {
+        font-size: 3rem; /* Fixed size for large screens */
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+        padding: 12px 24px;
+    }
+}
